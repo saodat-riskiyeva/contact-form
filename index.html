@@ -13,58 +13,79 @@
     <main>
       <form>
         <h2>How can we help you?</h2>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required />
+        <div>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
 
-        <label for="email">Your E-mail Adress</label>
-        <input type="email" id="email" name="email" required />
+        <div>
+          <label for="email">Your E-mail Adress</label>
+          <input type="email" id="email" name="email" required />
+        </div>
 
-        <label for="phonenumber">Your Phone Number</label>
-        <input type="number" id="phonenumber" name="phonenumber" required />
+        <div>
+          <label for="phonenumber">Your Phone Number</label>
+          <input type="number" id="phonenumber" name="phonenumber" required />
+        </div>
 
-        <label for="message"> Your message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <div>
+          <label for="message"> Your message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
 
-        <label for="howfind">How did you find us?</label>
-        <select id="howfind" name="howfind" required>
-          <option value="web-search">Web Search</option>
-          <option value="word-of-mouth">Word of Mouth</option>
-          <option value="other">Other</option>
-        </select>
+        <div>
+          <label for="howfind">How did you find us?</label>
+          <select id="howfind" name="howfind" required>
+            <option value="web-search">Web Search</option>
+            <option value="word-of-mouth">Word of Mouth</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
         <h2>How should we reply?</h2>
-        <label for="call-me">Call Me</label>
-        <input
-          type="radio"
-          id="call-me"
-          name="reply"
-          value="call-me"
-          required
-        />
 
-        <label for="email-me">Email Me</label>
-        <input
-          type="radio"
-          id="email-me"
-          name="reply"
-          value="email-me"
-          required
-        />
+        <div>
+          <label for="call-me">Call Me</label>
+          <input
+            type="radio"
+            id="call-me"
+            name="reply"
+            value="call-me"
+            required
+          />
+        </div>
 
-        <label for="do-not-reply">Do Not Reply</label>
-        <input
-          type="radio"
-          id="do-not-reply"
-          name="reply"
-          value="do-not-reply"
-          required
-        />
+        <div>
+          <label for="email-me">Email Me</label>
+          <input
+            type="radio"
+            id="email-me"
+            name="reply"
+            value="email-me"
+            required
+          />
+        </div>
 
-        <label for="terms">Accept Terms</label>
-        <input type="checkbox" id="terms" name="terms" required />
+        <div>
+          <label for="do-not-reply">Do Not Reply</label>
+          <input
+            type="radio"
+            id="do-not-reply"
+            name="reply"
+            value="do-not-reply"
+            required
+          />
+        </div>
 
-        <button type="reset">Clear</button>
-        <button type="submit">Submit</button>
+        <div>
+          <label for="terms">Accept Terms</label>
+          <input type="checkbox" id="terms" name="terms" required />
+        </div>
+
+        <div>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
   </body>
