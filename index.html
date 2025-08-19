@@ -56,6 +56,7 @@
                 required
                 minlength="10"
                 maxlength="200"
+                rows="5"
               ></textarea>
             </li>
           </ul>
@@ -72,7 +73,7 @@
         <section>
           <h2>How should we reply?</h2>
           <ul>
-            <li>
+            <li class="inline-control">
               <input
                 type="radio"
                 id="reply-phone"
@@ -82,7 +83,7 @@
               />
               <label for="reply-phone">Call Me</label>
             </li>
-            <li>
+            <li class="inline-control">
               <input
                 type="radio"
                 id="reply-email"
@@ -92,7 +93,7 @@
               />
               <label for="reply-email">Email Me</label>
             </li>
-            <li>
+            <li class="inline-control">
               <input
                 type="radio"
                 id="reply-none"
@@ -104,7 +105,7 @@
             </li>
           </ul>
         </section>
-        <section>
+        <section class="inline-control">
           <input type="checkbox" id="accept-terms" name="terms" required />
           <label for="accept-terms">Accept Terms</label>
         </section>
