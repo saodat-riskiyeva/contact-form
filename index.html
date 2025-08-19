@@ -17,22 +17,46 @@
           <ul>
             <li>
               <label for="username">Your Name</label>
-              <input type="text" id="username" name="name" required />
+              <input
+                type="text"
+                id="username"
+                name="name"
+                required
+                minlength="3"
+              />
             </li>
 
             <li>
               <label for="emailaddress">Your E-mail Adress</label>
-              <input type="email" id="emailaddress" name="email" required />
+              <input
+                type="email"
+                id="emailaddress"
+                name="email"
+                required
+                minlength="3"
+              />
             </li>
 
             <li>
               <label for="phonenumber">Your Phone Number</label>
-              <input type="tel" id="phonenumber" name="phonenum" required />
+              <input
+                type="tel"
+                id="phonenumber"
+                name="phonenum"
+                required
+                minlength="10"
+              />
             </li>
 
             <li>
               <label for="message"> Your message</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                required
+                minlength="10"
+                maxlength="200"
+              ></textarea>
             </li>
           </ul>
         </section>
