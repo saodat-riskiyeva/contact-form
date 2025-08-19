@@ -12,80 +12,82 @@
     </header>
     <main>
       <form>
-        <h2>How can we help you?</h2>
-        <div>
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" id="username" name="name" required />
+            </li>
 
-        <div>
-          <label for="email">Your E-mail Adress</label>
-          <input type="email" id="email" name="email" required />
-        </div>
+            <li>
+              <label for="emailaddress">Your E-mail Adress</label>
+              <input type="email" id="emailaddress" name="email" required />
+            </li>
 
-        <div>
-          <label for="phonenumber">Your Phone Number</label>
-          <input type="number" id="phonenumber" name="phonenumber" required />
-        </div>
+            <li>
+              <label for="phonenumber">Your Phone Number</label>
+              <input type="tel" id="phonenumber" name="phonenum" required />
+            </li>
 
-        <div>
-          <label for="message"> Your message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
+            <li>
+              <label for="message"> Your message</label>
+              <textarea id="message" name="message" required></textarea>
+            </li>
+          </ul>
+        </section>
 
-        <div>
-          <label for="howfind">How did you find us?</label>
-          <select id="howfind" name="howfind" required>
-            <option value="web-search">Web Search</option>
+        <section>
+          <label for="channel">How did you find us?</label>
+          <select id="channel" name="howfind" required>
+            <option value="search">Web Search</option>
             <option value="word-of-mouth">Word of Mouth</option>
             <option value="other">Other</option>
           </select>
-        </div>
-
-        <h2>How should we reply?</h2>
-
-        <div>
-          <label for="call-me">Call Me</label>
-          <input
-            type="radio"
-            id="call-me"
-            name="reply"
-            value="call-me"
-            required
-          />
-        </div>
-
-        <div>
-          <label for="email-me">Email Me</label>
-          <input
-            type="radio"
-            id="email-me"
-            name="reply"
-            value="email-me"
-            required
-          />
-        </div>
-
-        <div>
-          <label for="do-not-reply">Do Not Reply</label>
-          <input
-            type="radio"
-            id="do-not-reply"
-            name="reply"
-            value="do-not-reply"
-            required
-          />
-        </div>
-
-        <div>
-          <label for="terms">Accept Terms</label>
-          <input type="checkbox" id="terms" name="terms" required />
-        </div>
-
-        <div>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                id="reply-phone"
+                name="reply"
+                value="phone"
+                required
+              />
+              <label for="reply-phone">Call Me</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="reply-email"
+                name="reply"
+                value="email"
+                required
+              />
+              <label for="reply-email">Email Me</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="reply-none"
+                name="reply"
+                value="none"
+                required
+              />
+              <label for="reply-none">Do Not Reply</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <input type="checkbox" id="accept-terms" name="terms" required />
+          <label for="accept-terms">Accept Terms</label>
+        </section>
+        <section>
           <button type="reset">Clear</button>
           <button type="submit">Submit</button>
-        </div>
+        </section>
       </form>
     </main>
   </body>
